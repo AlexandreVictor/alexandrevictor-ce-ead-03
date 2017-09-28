@@ -1,0 +1,142 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/Estilo.css">
+   <!-- <script type="text/javascript" language ="javascript" src="./js/jquery-3.2.1.min.js"></script>-->
+    <title>Avaliação de Resultados</title>
+</head>
+    <body>
+    <div class="cabecalho">
+        <h2>Avaliação de Resultados</h2>
+    </div>
+    <form action="saida.php" method="post" name="form1">
+        <div>
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+                <table>
+                    <tr>
+                        <td>Nome Aluno:</td>
+                        <td><input type="text" name="nomealuno"  id="input2"></td>
+                    </tr>
+                    <tr>
+                        <td>Nome da Disciplina:</td>
+                        <td><input type="text" name="nomedisciplina" id="input2"></td>
+                    </tr>
+                    <tr>
+                        <td>Nome do Curso:</td>
+                        <td><input type="text" name="nomecurso" id="input2"></td>
+                    </tr>
+                    <tr>
+                        <td><i>Link</i> logo da faculdade :</td>
+                        <td><input type="text" name="imagemfaculdade" id="input2"></td>
+                    </tr>
+                </table>
+        </fieldset>
+        </div>
+        <div>    
+        <fieldset>
+            <legend>Dados dos Provas e Trabalhos</legend>
+            <table id="integrantes">
+                <th>
+                    Nota VA1(0 - 15):
+                </th>
+                <th>
+                    Nota VA2(0 - 25):
+                </th>
+                <th>
+                    Nota VA3(0 - 35):
+                </th>
+                <th>
+                    Nota Trabalhos(0 - 25):
+                </th>
+                <tr>
+                    <td><input type="text" name="notava1"></td>
+                    <td><input type="text" name="notava2"></td>
+                    <td><input type="text" name="notava3"></td>
+                    <td><input type="text" name="notatrabalho"></td>
+                </tr>
+            </table>
+    </fieldset>
+    <div>
+        <fieldset>
+            <legend>Responsáveis</legend>
+             <table>
+                <th>Nome do(a) Professor(a):</th>
+                <th>Nome do(a) Coordendador(a):</th>
+                <tr>
+                    <td><input type="text" name="nmprofessor" id="input2"></td></td>
+                    <td><input type="text" name="nmcoordenador" id="input2"></td></td>
+                </tr>
+            </table>    
+            <input type="submit" value="Gera página" id="gerarpag">
+        </fieldset>
+        
+  <!--  </div> 
+    <div>
+        <fieldset>
+            <legend>Cores da Página</legend>
+            Cor de fundo da página:
+                <select name="cordefundo">
+                    <option value="bkcorazul">Azul</option>
+                    <option value="bkcoramarelo">Amarelo</option>
+                    <option value="bkcorbranco">Branco</option>
+                    <option value="bkcorpreto">Preto</option>
+                    <option value="bkcorverde">Verde</option>
+                    <option value="bkcorvermelho">Vermelho</option>
+                </select>
+            Cor do texto da página:
+                <select name="cordotexto">
+                    <option value="ftcorazul">Azul</option>
+                    <option value="ftcoramarelo">Amarelo</option>
+                    <option value="ftcorbranco">Branco</option>
+                    <option value="ftcorpreto">Preto</option>
+                    <option value="ftcorverde">Verde</option>
+                    <option value="ftcorvermelho">Vermelho</option>
+                </select>
+                <input type="submit" value="Gera página" id="gerarpag">
+        </fieldset>
+    </div>       -->
+</form>
+
+<!--
+<script>
+   $(document).change(function() {
+    $("#qtdlinhas").change(function() {
+        let qtdlinhas = $('#qtdlinhas').val();
+        //let totallinhas = document.getElementById("totallinhas");
+        let tabela = document.getElementById("integrantes");
+        let teste = document.getElementById("totallinhas")
+        let body = "";
+        console.log("total de linhas"+totallinhas.innerText);
+        console.log(qtdlinhas); 
+
+            if (qtdlinhas>0 && qtdlinhas > totallinhas.innerText){
+                for (var i = totallinhas.innerText; i < qtdlinhas; i++)
+                {
+                    
+                    body = "<tr>"+
+                                "<td><input type=text name=nmintegrante"+i+"></td>"+
+                                "<td><input type=text name=datanascimento"+i+"></td>"+
+                                "<td><input type=text name=instrumento"+i+"></td>"+
+                                "<td><label>-</label>"+
+                            "</tr>"
+                    tabela.innerHTML += body;
+                   // totallinhas.innerHTML = "<input type=text name='linhastotais'  id='totallinhas' value='"+qtdlinhas+"'>";
+                }
+
+            }
+
+               
+    
+    
+    });
+
+});
+</script>       -->
+</body>
+
+
+
+</html>
